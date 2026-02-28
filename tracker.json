@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Test User (Tucson)",
+        "email": "test@tucson.com",
+        "city": "Tucson",
+        "temp": 14.4
+    },
+    {
+        "name": "Test User (London)",
+        "email": "test@london.com",
+        "city": "London",
+        "temp": 7.5
+    },
+    {
+        "name": "Test User (Dubai)",
+        "email": "test@dubai.com",
+        "city": "Dubai",
+        "temp": 27.7
+    },
+    {
+        "name": "Test User (Tokyo)",
+        "email": "test@tokyo.com",
+        "city": "Tokyo",
+        "temp": 11.0
+    },
+    {
+        "name": "Test User (Paris)",
+        "email": "test@paris.com",
+        "city": "Paris",
+        "temp": 11.0
+    }
+]

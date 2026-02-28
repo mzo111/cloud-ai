@@ -8,7 +8,7 @@ def get_weather(city):
         geo_data = geo_response.json()
         if not geo_data.get('results'):
             print (f"City {city} does not exist or is not supported")
-            return 
+            return None
         lat = geo_data['results'][0]['latitude']
         lon = geo_data['results'][0]['longitude']
         
@@ -18,13 +18,10 @@ def get_weather(city):
         weather_data = weather_response.json()
         
         temp = weather_data['current_weather']['temperature']
-        print(f"Current temp in {city} is {temp}°C")
-        with open("weather_log.txt", "a") as f:
-            f.write(f"{city}:{temp}C\n")
+        return temp
     except requests.exceptions.Timeout:
         print("Request timed out. Please try again later.")
+        return None
     except Exception as e:
         print(f"error occured: {e}")
-        
-city = input("Enter a city name: ")
-get_weather(city)
+        return None
