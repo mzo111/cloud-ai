@@ -1,2 +1,5 @@
 Los Angeles:18.8C
 Tucson:15.5C
+Tucson:14.9C
+Fresno:14.4C
+Muscat:24.0C
